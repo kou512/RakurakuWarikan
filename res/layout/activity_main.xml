@@ -1,7 +1,8 @@
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-      android:layout_width="match_parent"
-      android:layout_height="fill_parent"
-      android:orientation="vertical" >
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
       <LinearLayout
           xmlns:android="http://schemas.android.com/apk/res/android"
           android:layout_width="match_parent"
@@ -32,13 +33,62 @@
               android:layout_height="wrap_content"
               android:text="追加" />
       </LinearLayout>
-        
+
+      <LinearLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="5dp" >
+
+          <TextView
+              android:id="@+id/head_attend"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingRight="5dp"
+              android:text="出席"
+              android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/head_paid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="5dp"
+                        android:text="支払済"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/head_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="95dp"
+                        android:text="名前"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                    
+                    <TextView
+                        android:id="@+id/head_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="20dp"
+                        android:text="支払金額"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                    
+                    <TextView
+              android:id="@+id/head_detail"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="詳細"
+              android:textAppearance="?android:attr/textAppearanceSmall" />
+                    
+          </LinearLayout>
+
       <ListView
           xmlns:android="http://schemas.android.com/apk/res/android"
           android:id="@android:id/list"
           android:layout_width="fill_parent"
           android:layout_height="0dp"
-          android:layout_weight="0.71" >
+          android:layout_weight="0.36" >
+
       </ListView>
 
 

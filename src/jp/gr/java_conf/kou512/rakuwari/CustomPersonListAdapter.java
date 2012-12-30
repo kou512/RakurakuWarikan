@@ -1,4 +1,4 @@
-package com.example.warikan;
+package jp.gr.java_conf.kou512.rakuwari;
 
 import java.util.ArrayList;
 
@@ -27,9 +27,11 @@ public class CustomPersonListAdapter extends ArrayAdapter<PersonList> {
         if (convertView == null) {
             convertView = inflater.inflate(R.layout.person_list, null);
         }
+        CheckBox chkAttend = (CheckBox)convertView.findViewById(R.id.row_chk_attend);
         CheckBox chkPaid = (CheckBox)convertView.findViewById(R.id.row_chk_Paid);
         TextView txtview = (TextView)convertView.findViewById(R.id.row_PersonText);
         
+        chkAttend.setChecked(person.isAttendChecked());
         chkPaid.setChecked(person.isPaidChecked());
         txtview.setText(person.getPersonName());
         return convertView;

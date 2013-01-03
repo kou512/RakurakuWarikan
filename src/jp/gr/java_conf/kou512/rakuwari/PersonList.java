@@ -15,6 +15,16 @@ public class PersonList {
 	//支払金額
 	private String cost;
 	
+	//個別設定されているか判別するフラグ
+	//（設定されている・・・true　設定されていない・・・false）
+	private boolean isSetAnotherCost;
+	
+	public boolean isSetAnotherCost() {
+		return isSetAnotherCost;
+	}
+	public void setSetAnotherCost(boolean isSetAnotherCost) {
+		this.isSetAnotherCost = isSetAnotherCost;
+	}
 	public boolean isPaidChecked() {
 		return isPaidChecked;
 	}

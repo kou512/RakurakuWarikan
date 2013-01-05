@@ -62,6 +62,11 @@ public class MainPersonListActivity extends ListActivity {
 		setListAdapter(personAdapter);
 		setCost();
 	}
+	
+	//DBからデータを取得する
+	private void getDataFromDb(){
+		
+	}
 
 	// リストに項目を追加する
 	private void addPerson() {
@@ -108,4 +113,8 @@ public class MainPersonListActivity extends ListActivity {
 
 	}
 
+	//既存リストの読み込み
+	private void loadList(int listNo){
+		
+	}
 }
